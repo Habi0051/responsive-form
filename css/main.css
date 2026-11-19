@@ -4,6 +4,14 @@
 
 @layer styles{
     :root{
+        --font-anta: Anta, Arial, sans-serif;
+        --font-righteous: Righteous, 'Arial', sans-serif;
 
+    }
+    h1{
+        font-family: var(--font-righteous);
+    }
+    body{
+        font-family: var(--font-anta);
     }
 }
