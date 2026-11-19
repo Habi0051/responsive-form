@@ -21,6 +21,42 @@
     <main class="content">
         <form class="register-form" action="#" method="post">
 
+            <fieldset class="register-form__group">
+
+                <legend class="register-form__legend">Your Information</legend>
+
+                <!-- Textbox -->
+                <label class="register-form__label" for="studentName">Your Full Name</label>
+                <input class="register-form__input" type="text" id="studentName" name="studentName">
+
+                <!-- E-mail -->
+                <label class="register-form__label" for="studentEmail">Your E-mail</label>
+                <input class="register-form__input" type="email" id="studentEmail" name="studentEmail">
+                
+                <!-- Radio Buttons -->
+                <label class="register-form__label" for="studentGender">Gender</label>
+                <input class="register-form__input" type="radio" id="studentGender" name="studentGender">
+                
+                <!-- Checkboxes -->
+                <label class="register-form__label" for="studentCourse">Courses</label> 
+                <input class="register-form__input" type="checkbox" id="studentCourse" name="studentCourse">                
+                
+                <!-- Dropdown -->
+                <label class="register-form__label" for="studentLanguage">Primary Language</label>
+                <select class="register-form__language" id="studentLanguage" name="studentLanguage">
+                    <option>English</option>
+                    <option>French</option>
+                    <option>Other</option>
+                </select> 
+
+                <!-- Date Picker -->
+                <label class="register-form__label" for="studentStart">Start Date</label>
+                <input class="register-form__input" type="date" id="studentStart" name="studentStart">                
+                
+                <!-- Tel Input -->
+                <label class="register-form__label" for="studentPhone">Mobile Number</label>
+                <input class="register-form__input" type="tel" id="studentPhone" name="studentPhone">
+            </fieldset>     
         </form>
     </main>
 </body>
