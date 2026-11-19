@@ -33,10 +33,7 @@
                 <label class="register-form__label" for="studentEmail">Your E-mail</label>
                 <input class="register-form__input" type="email" id="studentEmail" name="studentEmail">
                 
-                <!-- Radio Buttons -->
-                <label class="register-form__label" for="studentGender">Gender</label>
-                <input class="register-form__input" type="radio" id="studentGender" name="studentGender">
-                
+               
                 <!-- Checkboxes -->
                 <label class="register-form__label" for="studentCourse">Courses</label> 
                 <input class="register-form__input" type="checkbox" id="studentCourse" name="studentCourse">                
@@ -44,9 +41,10 @@
                 <!-- Dropdown -->
                 <label class="register-form__label" for="studentLanguage">Primary Language</label>
                 <select class="register-form__language" id="studentLanguage" name="studentLanguage">
-                    <option>English</option>
-                    <option>French</option>
-                    <option>Other</option>
+                    <option value="">Select</option>
+                    <option value="english">English</option>
+                    <option value="french">French</option>
+                    <option value="other">Other</option>
                 </select> 
 
                 <!-- Date Picker -->
@@ -57,6 +55,17 @@
                 <label class="register-form__label" for="studentPhone">Mobile Number</label>
                 <input class="register-form__input" type="tel" id="studentPhone" name="studentPhone">
             </fieldset>     
+            <fieldset class="register-form__group">
+                <legend class="register-form__legend">Gender</legend>
+
+                <input class="register-form__radio" type="radio" id="genderFemale" name="studentGender" value="Female">
+                <label class="register-form__label" for="genderFemale">Female</label>
+                <input class="register-form__radio" type="radio" id="genderMale" name="studentGender" value="Male">
+                <label class="register-form__label" for="genderMale">Male</label>
+                <input class="register-form__radio" type="radio" id="genderOther" name="studentGender" value="Other">
+                <label class="register-form__label" for="genderOther">Other</label>
+                
+            </fieldset>
         </form>
     </main>
 </body>
