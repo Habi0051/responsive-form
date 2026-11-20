@@ -6,12 +6,48 @@
     :root{
         --font-anta: Anta, Arial, sans-serif;
         --font-righteous: Righteous, 'Arial', sans-serif;
-
+        --color-bg: hsl(43, 37%, 83%);
+        --color-text: hsl(136, 93%, 18%);
+        --color-accent: hsl(136, 21%, 48%);
+        --radius: 1rem;
     }
-    h1{
+    .site-header{
+        display: grid;
+        justify-items: center;
         font-family: var(--font-righteous);
+        color: var(--color-text)
+    }
+    .site-header__title{
+        font-size: clamp(1.75rem, 9vw, 3.5rem);
+        text-wrap: nowrap;
+        text-decoration: underline;
+        text-decoration-color: var(--color-accent);
+        text-decoration-thickness: 0.2rem;
+        text-underline-offset: 0.4rem;
+    }
+    .site-header__sub{
+        font-size: 1.8rem;
+        padding-top: 0;
+        padding-bottom: 1rem;
+        margin: 0;
     }
     body{
+        background-color: var(--color-bg);
         font-family: var(--font-anta);
+    }
+    .register-form{
+        display: grid;
+        gap: 1rem;
+    }
+    .register-form__group{
+        display: grid;
+        gap: 0.5rem;
+        border: none;
+        padding: 0;
+    }
+    .register-form__group{
+        border: 1px solid var(--color-text);
+        padding: 0.8rem;
+        border-radius: var(--radius);
     }
 }
