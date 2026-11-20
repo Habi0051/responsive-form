@@ -34,7 +34,7 @@
                 <input class="register-form__input" type="email" id="studentEmail" name="studentEmail" placeholder="example@example.com">             
                 
                 <label class="register-form__label" for="studentLanguage">Primary Language</label>
-                <select class="register-form__language" id="studentLanguage" name="studentLanguage">
+                <select class="register-form__input" id="studentLanguage" name="studentLanguage">
                     <option value="">Select</option>
                     <option value="english">English</option>
                     <option value="french">French</option>
@@ -52,33 +52,44 @@
 
                 <legend class="register-form__legend">Gender</legend>
 
-                <input class="register-form__radio" type="radio" id="genderFemale" name="studentGender" value="Female">
-                <label class="register-form__label" for="genderFemale">Female</label>
+                <div class="register-form__option">
+                    <input class="register-form__radio" type="radio" id="genderFemale" name="studentGender" value="Female">
+                    <label class="register-form__label" for="genderFemale">Female</label>
+                </div>
+                <div class="register-form__option">
+                    <input class="register-form__radio" type="radio" id="genderMale" name="studentGender" value="Male">
+                    <label class="register-form__label" for="genderMale">Male</label>
+                </div>
+                <div class="register-form__option">    
+                    <input class="register-form__radio" type="radio" id="genderOther" name="studentGender" value="Other">
+                    <label class="register-form__label" for="genderOther">Other</label>
+                </div>
                 
-                <input class="register-form__radio" type="radio" id="genderMale" name="studentGender" value="Male">
-                <label class="register-form__label" for="genderMale">Male</label>
-                
-                <input class="register-form__radio" type="radio" id="genderOther" name="studentGender" value="Other">
-                <label class="register-form__label" for="genderOther">Other</label>
-
             </fieldset>
             <fieldset class="register-form__group">
+
                 <legend class="register-form__legend">Courses</legend>
 
-                <input class="register-form__checkbox" type="checkbox" id="madd8010" name="studentCourse" value="madd8010">
-                <label class="register-form__label" for="madd8010">MADD8010</label>
-
-                <input class="register-form__checkbox" type="checkbox" id="madd9011" name="studentCourse" value="madd9011">
-                <label class="register-form__label" for="madd9011">MADD9011</label>
-                
-                <input class="register-form__checkbox" type="checkbox" id="madd9013" name="studentCourse" value="madd9013">
-                <label class="register-form__label" for="madd9013">MADD9013</label>
-                
-                <input class="register-form__checkbox" type="checkbox" id="madd9014" name="studentCourse" value="madd9014">
-                <label class="register-form__label" for="madd9014">MADD9014</label>
-                
-                <input class="register-form__checkbox" type="checkbox" id="madd9112" name="studentCourse" value="madd9112">
-                <label class="register-form__label" for="madd9112">MADD9112</label>
+                <div class="register-form__option">
+                    <input class="register-form__checkbox" type="checkbox" id="madd8010" name="studentCourse" value="madd8010">
+                    <label class="register-form__label" for="madd8010">MADD8010</label>
+                </div>
+                <div class="register-form__option">
+                    <input class="register-form__checkbox" type="checkbox" id="madd9011" name="studentCourse" value="madd9011">
+                    <label class="register-form__label" for="madd9011">MADD9011</label>
+                </div>
+                <div class="register-form__option">
+                    <input class="register-form__checkbox" type="checkbox" id="madd9013" name="studentCourse" value="madd9013">
+                    <label class="register-form__label" for="madd9013">MADD9013</label>
+                </div>
+                 <div class="register-form__option">
+                    <input class="register-form__checkbox" type="checkbox" id="madd9014" name="studentCourse" value="madd9014">
+                    <label class="register-form__label" for="madd9014">MADD9014</label>
+                </div>
+                <div class="register-form__option">
+                    <input class="register-form__checkbox" type="checkbox" id="madd9112" name="studentCourse" value="madd9112">
+                    <label class="register-form__label" for="madd9112">MADD9112</label>
+                </div>
             </fieldset>
             <div class="register-form__action">
                 <button class="register-form__submit" type="submit">Register</button>

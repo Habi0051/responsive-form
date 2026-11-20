@@ -7,8 +7,10 @@
         --font-anta: Anta, Arial, sans-serif;
         --font-righteous: Righteous, 'Arial', sans-serif;
         --color-bg: hsl(43, 37%, 83%);
+        --color-bgscndry: hsl(42, 21%, 81%);
         --color-text: hsl(136, 93%, 18%);
         --color-accent: hsl(136, 21%, 48%);
+        --color-black: hsl(0, 0%, 0%);
         --radius: 1rem;
     }
     .site-header{
@@ -34,6 +36,7 @@
     body{
         background-color: var(--color-bg);
         font-family: var(--font-anta);
+        color: var(--color-text);
     }
     .register-form{
         display: grid;
@@ -42,12 +45,23 @@
     .register-form__group{
         display: grid;
         gap: 0.5rem;
-        border: none;
-        padding: 0;
-    }
-    .register-form__group{
-        border: 1px solid var(--color-text);
-        padding: 0.8rem;
+        border: 1px solid var(--color-accent);
         border-radius: var(--radius);
+        padding: 0.8rem;
+    }
+    .register-form__label{
+        font-weight: 600;
+    }
+    .register-form__input,
+    .register-form__select{
+        padding: 0.3rem;
+        border: 1px solid hsl( from var(--color-black) h s l / 0.3);
+        border-radius: var(--radius);
+        background-color: var(--color-bgscndry);
+    }
+    .register-form__option{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
     }
 }
