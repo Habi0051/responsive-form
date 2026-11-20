@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anta&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="./img/favicon.svg">
+    <link rel="shortcut icon" href="./img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
 </head>
 <body>
     <header class="site-header">
@@ -28,13 +32,13 @@
                 <legend class="register-form__legend register-form__title">Your Information</legend>
 
                 <label class="register-form__label" for="studentName">Full Name</label>
-                <input class="register-form__input" type="text" id="studentName" name="studentName" placeholder="Jane Doe">
+                <input class="register-form__input" type="text" id="studentName" name="studentName" placeholder="Jane Doe" required>
 
                 <label class="register-form__label" for="studentEmail" >E-mail</label>
-                <input class="register-form__input" type="email" id="studentEmail" name="studentEmail" placeholder="example@example.com">             
+                <input class="register-form__input" type="email" id="studentEmail" name="studentEmail" placeholder="example@example.com" required>             
                 
                 <label class="register-form__label" for="studentLanguage">Primary Language</label>
-                <select class="register-form__input" id="studentLanguage" name="studentLanguage">
+                <select class="register-form__input" id="studentLanguage" name="studentLanguage" required>
                     <option value="">Select</option>
                     <option value="english">English</option>
                     <option value="french">French</option>
@@ -42,10 +46,10 @@
                 </select> 
 
                 <label class="register-form__label" for="studentStart">Start Date</label>
-                <input class="register-form__input" type="date" id="studentStart" name="studentStart">                
+                <input class="register-form__input" type="date" id="studentStart" name="studentStart" required>                
                 
                 <label class="register-form__label" for="studentPhone">Mobile Number</label>
-                <input class="register-form__input" type="tel" id="studentPhone" name="studentPhone" placeholder="999-999-9999">
+                <input class="register-form__input" type="tel" id="studentPhone" name="studentPhone" placeholder="999-999-9999" required> 
 
             </fieldset>     
             <fieldset class="register-form__group register-form__group-option">
