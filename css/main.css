@@ -6,8 +6,8 @@
     :root{
         --font-anta: Anta, Arial, sans-serif;
         --font-righteous: Righteous, 'Arial', sans-serif;
-        --color-bg: hsl(43, 47%, 83%);
-        --color-bgscndry: hsl(43, 37%, 83%);
+        --color-bg: hsl(43, 34%, 83%);
+        --color-bgscndry: hsl(43, 27%, 83%);
         --color-text: hsl(136, 93%, 18%);
         --color-accent: hsl(136, 21%, 48%);
         --color-black: hsl(0, 0%, 0%);
@@ -16,7 +16,7 @@
     .site-header{
         margin: 0;
         padding-bottom: 1.2rem;
-        background-image: linear-gradient(to bottom right, var(--color-accent), var(--color-bg));
+        background-image: linear-gradient(to bottom right, var(--color-accent), var(--color-bgscndry));
         display: grid;
         justify-items: center;
         font-family: var(--font-righteous);
@@ -49,54 +49,82 @@
         gap: 1rem;
         margin: 1rem;
         margin-top: 1.5rem;
-        padding-left: 1rem;
-        padding-right: 5rem;
         background-color: var(--color-bgscndry);
         border: 1px dashed var(--color-accent);
         border-radius: var(--radius);
+        accent-color: var(--color-text);
 
     }
     .register-form__title{
         font-size: 2rem;
+        padding: 1rem;
         font-family: var(--font-righteous);
+        font-weight: 700;
         margin-inline: auto;    
         text-wrap: nowrap;
     }
     .register-form__group{
         display: grid;
         gap: 0.5rem;
-        padding: 0.8rem;
+        padding: 1.6rem;
         border: none;
     }
     .register-form__label{
         font-size: 1.1rem;
         font-weight: 600;
-        color: hsl (from var(--color-text) h s l / 0.1);
+        padding-top: 0.3rem;
+        color: hsl(from var(--color-text) h s l / 0.9);
     }
     .register-form__input,
     .register-form__select{
         padding: 0.3rem;
         border: 1px solid hsl( from var(--color-black) h s l / 0.3);
         border-radius: var(--radius);
-        background-color: hsl(from var(--color-accent) h s l / 0.1);
+        background-color: hsl(from var(--color-accent) h s l / 0.15);
     }
     .register-form__option{
         display: flex;
         align-items: center;
-        gap: 0.5rem;
+        gap: 0.2rem;
     }
     .register-form__group-option{
-        grid-template-columns: repeat(auto-fit, minmax(min(7rem, 100%), 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(min(7rem, 100%), 1fr));
     }
     .register-form__choice{
-        font-weight: 100;
-        opacity: 0.8;
+        font-weight: 200;
+        opacity: 0.9;
+    }
+    .register-form__submit{
+        font-size: 1.2rem;
+        color: var(--color-bgscndry);
+        background-color: var(--color-text);
+        padding: 0.7rem;
+        margin-bottom: 2rem;
+        border-radius: var(--radius);
+    }
+    .register-form__submit:hover{
+        cursor: pointer;
+        opacity: 0.9;
+    }
+    .register-form__action{
+        display: flex;
+        justify-content: center;
+        margin-inline: auto;
+
     }
     
-    @media (min-width: 750px){
+    @media (min-width: 700px){
         .register-form{
-            max-width: 30rem;
+            max-width: 40rem;
             margin-inline: auto;
+        }
+        .register-form__group{
+            margin-inline: auto;
+            min-width: 30rem;
+        }
+        .register-form__input,
+        .register-form__select{
+            max-width: 25rem;
         }
     }
 }
